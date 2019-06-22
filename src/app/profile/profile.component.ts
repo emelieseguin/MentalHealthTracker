@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { isAndroid, Page } from "tns-core-modules/ui/page/page";
 
 @Component({
     selector: "Profile",
@@ -6,11 +7,14 @@ import { Component, OnInit } from "@angular/core";
     templateUrl: "./profile.component.html"
 })
 export class ProfileComponent implements OnInit {
-    constructor() {
-        // Use the constructor to inject services.
+    
+    constructor(private page: Page) {
+        if (isAndroid) {
+            this.page.actionBarHidden = true;
+        }
     }
 
-    ngOnInit(): void {
+    ngOnInit(): void { 
         // Use the "ngOnInit" handler to initialize data for the view.
     }
 }

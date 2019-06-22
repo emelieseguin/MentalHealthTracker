@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { Page, isAndroid } from "tns-core-modules/ui/page/page";
 
 @Component({
     selector: "update-info",
@@ -6,8 +7,11 @@ import { Component, OnInit } from "@angular/core";
     templateUrl: "./update-info.component.html"
 })
 export class UpdateInfoComponent implements OnInit {
-    constructor() {
-        // Use the component constructor to inject providers.
+    
+    constructor(private page: Page) {
+        if (isAndroid) {
+            this.page.actionBarHidden = true;
+        }
     }
 
     ngOnInit(): void {
