@@ -1,11 +1,11 @@
 import { Component, OnInit } from "@angular/core";
 
 @Component({
-    selector: "Browse",
+    selector: "update-info",
     moduleId: module.id,
-    templateUrl: "./browse.component.html"
+    templateUrl: "./update-info.component.html"
 })
-export class BrowseComponent implements OnInit {
+export class UpdateInfoComponent implements OnInit {
     constructor() {
         // Use the component constructor to inject providers.
     }
