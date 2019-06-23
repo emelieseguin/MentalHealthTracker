@@ -1,51 +1,35 @@
-<StackLayout>
+<StackLayout class="cardBackgroundHome">
+    <Label class="last-updated" text="Last updated: mm/dd/yyyy">    </Label>
+    <CardView class="cardStyleHome" margin="10" elevation="40" radius="1" >
+        <StackLayout>
+        <Label class="home-card-title" verticalAlignment="top" text="Significant Trends"> </Label>
+        <!-- TODO: n trends, the symptoms will change -->
+            <FlexboxLayout flexDirection="row">        
+                <Image src="../images/trend_down.png" stretch="none" ></Image>
+                <!-- TODO fix images and add up/down arrow symbols -->
+                <!-- <Image [src]="country.imageSrc" class="thumb img-circle"></Image> -->
+                <Label class="" text=" Lack of motivation"></Label>
+                <Label class="trend-decrease"  text=" (arrowdown)30%"></Label>
 
+            </FlexboxLayout>
+            <FlexboxLayout flexDirection="row">        
+                    <Label class=""  text="trend up img:" ></Label>
+                    <Label class="" text=" Inability to concentrate"></Label>
+                    <Label class="trend-increase" text=" (arrowup)15.2%"></Label>
+            </FlexboxLayout>
+            <FlexboxLayout flexDirection="row">        
+                    <Label class=""  text="no trend img:" ></Label>
+                    <Label class="" text=" No further trends"></Label>
+            </FlexboxLayout>
+        </StackLayout>
+    </CardView>
+    <CardView class="cardStyleHome" margin="10" elevation="40" radius="1" >
+                <StackLayout>
+                <Label class="home-card-title" verticalAlignment="top" text="Weekly Overview"> </Label>
+            </StackLayout> 
+    </CardView>
 
-    <!-- <ListView [items]="items" class="list-group">
-        <ng-template let-item="item">
-            <Label [nsRouterLink]="['../item', item.id]" [text]="item.name" class="list-group-item"></Label>
-        </ng-template>
-    </ListView> 
--->
-
-
-
-
-    <!-- <CardView class="cardStyle" margin="10" elevation="40" radius="1">
-        <GridLayout rows="10,30,30,250, auto, auto,10" columns="10,40, *, 30,10">
-            <Label class="m-10 h3" verticalAlignment="top" text="hi"></Label>
-        </GridLayout>
-      </CardView>
-
-      <CardView class="cardStyle" margin="10" elevation="40" radius="1">
-        <GridLayout rows="10,30,30,250, auto, auto,10" columns="10,40, *, 30,10">
-            <Label class="m-10 h3" verticalAlignment="top" text="hi 2"></Label>
-       
-      </CardView> -->
-      <CardView class="cardStyle" margin="10" elevation="40" radius="1">
-        <GridLayout rows="10,30,30,100, auto, auto,10" columns="10,40, *, 30,10">
-          <label
-            horizontalAlignment="left"
-            text="Significant Trends"
-            colSpan="3"
-            row="4"
-            textWrap="true"
-            col="1"
-          ></label>
-          <label
-            horizontalAlignment="left"
-            text="hi"
-            textWrap="true"
-            col="1"
-            row="5"
-            colSpan="3"
-          ></label>
-        </GridLayout>
-
-        
-      </CardView>
-
-      <CardView class="cardStyle" margin="10" elevation="40" radius="1">
+    <CardView class="cardStyle" margin="10" elevation="40" radius="1">
         <GridLayout rows="10,30,30,100, auto, auto,10" columns="10,40, *, 30,10">
           <label
             horizontalAlignment="left"
@@ -64,9 +48,9 @@
             colSpan="3"
           ></label>
         </GridLayout>
-      </CardView>
+    </CardView>
 
-      <CardView class="cardStyle" margin="10" elevation="40" radius="1">
+    <CardView class="cardStyle" margin="10" elevation="40" radius="1">
         <GridLayout rows="10,30,30,100, auto, auto,10" columns="10,40, *, 30,10">
           <label
             horizontalAlignment="left"
@@ -85,9 +69,9 @@
             colSpan="3"
           ></label>
         </GridLayout>
-      </CardView>
+    </CardView>
 
-      <CardView class="cardStyle" margin="10" elevation="40" radius="1">
+    <CardView class="cardStyle" margin="10" elevation="40" radius="1">
         <GridLayout rows="10,30,30,100, auto, auto,10" columns="10,40, *, 30,10">
           <label
             horizontalAlignment="left"
@@ -106,6 +90,6 @@
             colSpan="3"
           ></label>
         </GridLayout>
-      </CardView>
+    </CardView>
 
     </StackLayout>  

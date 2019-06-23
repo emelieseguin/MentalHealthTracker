@@ -4,7 +4,8 @@ import { Page, isAndroid } from "tns-core-modules/ui/page/page";
 @Component({
     selector: "update-info",
     moduleId: module.id,
-    templateUrl: "./update-info.component.html"
+    templateUrl: "./update-info.component.html",
+    styleUrls: ["./update-info.component.css"]
 })
 export class UpdateInfoComponent implements OnInit {
     
