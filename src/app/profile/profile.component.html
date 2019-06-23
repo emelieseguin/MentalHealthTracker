@@ -1,10 +1,31 @@
-<GridLayout class="page page-content">
-    
-    <!-- 
-        <Label class="page-icon fa" text="&#xf002;"></Label>
-    <Label class="page-placeholder" text="Page content goes here"></Label>\
+<StackLayout class="cardBackgroundProfile">
+        
+    <CardView class="cardStyleProfile" margin="10" elevation="40" radius="1" >
+        <!-- TODO: Make card fill entire height of screen -->
+        <!-- TODO: Round corners -->
+                <StackLayout>
+                <Label class="user-name" verticalAlignment="top" text="{{currentUser.firstName}} {{currentUser.lastName}}"> </Label>
+                    <FlexboxLayout flexDirection="row">        
+                        <Label class="user-info-heading"  text="     Age:" ></Label>
+                        <Label class="user-info" text=" {{currentUser.age}}"></Label>
+                    </FlexboxLayout>
+                    <FlexboxLayout flexDirection="row">        
+                            <Label class="user-info-heading"  text="     Sex:" ></Label>
+                            <Label class="user-info" text=" {{currentUser.sex}}"></Label>
+                    </FlexboxLayout>
+                    <FlexboxLayout flexDirection="row">        
+                            <Label class="user-info-heading"  text="     Email:" ></Label>
+                            <Label class="user-info" text=" {{currentUser.email}}"></Label>
+                    </FlexboxLayout>
+                <Label class="space" text="" ></Label>
+                <Label class="diagnoses-treatments" verticalAlignment="top" text="Diagnoses:" ></Label>
+                <!-- TODO: put 0 to n diagnoses and treatments  -->
+                <Label class="user-info2" verticalAlignment="top" text="   - {{currentUser.diagnoses[0]}}" ></Label>
+                <Label class="user-info2" verticalAlignment="top" text="   - {{currentUser.diagnoses[1]}}" ></Label>
+                <Label class="diagnoses-treatments" verticalAlignment="top" text="Treatments:" ></Label> 
+                <Label class="user-info2" verticalAlignment="top" text="   - {{currentUser.treatments[0]}}" ></Label>
+                <Label class="user-info2" verticalAlignment="top" text="   - {{currentUser.treatments[1]}}" ></Label>
+            </StackLayout> 
+      </CardView>
+    </StackLayout>
 
-    -->
-
-    <Label class="m-10 h3" verticalAlignment="top" text="{{currentUser.firstName}} {{currentUser.lastName}}"></Label>
-</GridLayout>
