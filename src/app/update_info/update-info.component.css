@@ -1,0 +1,24 @@
+.cardBackgroundUpdateInfo{
+    background-color: #23495F;
+}
+/* .cardStyleUpdateInfo{} */
+.question1{
+    font-size: 14;
+    margin-left: 10;
+    margin-top: 20;
+    color: white;
+    font-weight: bold;
+}
+.question2{
+    font-size: 14;
+    margin-left: 10;
+    margin-top: 20;
+    color: white;
+    font-weight: bold;
+}
+.symptom{
+    font-size: 14;
+    margin-left: 25;
+    margin-bottom: 5;
+    margin-top: 15;
+}

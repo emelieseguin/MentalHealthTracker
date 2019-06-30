@@ -1,0 +1,34 @@
+.cardBackgroundHome{
+    background-color: #23495F;
+}
+/* .cardStyleHome{
+
+} */
+
+.last-updated{
+    color:white;
+    margin-left: 10;
+    margin-top:8;
+    font-weight: bold;
+}
+
+.home-card-title{
+    font-size: 16;
+    margin-bottom: 20;
+    margin-left: 10;
+    margin-top: 10;
+    font-weight: bold;
+}
+
+.trend-decrease{
+    color: green;
+}
+
+.trend-decrease-img{
+    background-image: url("~/images/no_trend.png");
+}
+
+.trend-increase{
+    color: red;
+
+}
